@@ -1,0 +1,12 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.card-container .ant-card {
+  width: 27rem;
+  height: 15rem;
+}
