@@ -12,7 +12,7 @@ export default function Clubs({ onSelectClub }: { onSelectClub: (id: string) => 
               key={club.id}
               onClick={() => onSelectClub(club.id)}
             >
-              <strong>{club.name}</strong>: {club.description}
+              <div style={{textAlign:'center'}}><strong>{club.name}</strong></div><div>{club.description}</div>
             </Card>
           ))}
         </div>

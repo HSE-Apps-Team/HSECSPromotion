@@ -1,5 +1,6 @@
 import React from 'react';
-import { clubs, courses, getTestimoniesForAffiliation } from '../data/data';
+import { clubs, courses } from '../data/data';
+import Testimony from '../models/Testimony';
 import Affiliation from '../models/Affiliation';
 import { Button, Typography, List } from 'antd';
 
@@ -14,7 +15,7 @@ export default function Details({ itemType, itemId, onBack }: DetailsProps) {
     ? clubs.find(c => c.id === itemId)
     : courses.find(c => c.id === itemId);
 
-  const testimonies = item ? getTestimoniesForAffiliation(item) : [];
+  const testimonies: Testimony[] | undefined = item?.testimonyArr ? item.testimonyArr : [];
 
   if (!item) {
     return <div>Item not found</div>;
@@ -38,8 +39,7 @@ export default function Details({ itemType, itemId, onBack }: DetailsProps) {
             dataSource={testimonies}
             renderItem={(testimony) => (
               <List.Item>
-                <p>"{testimony.content}"</p>
-                <small>- {testimony.author}</small>
+                <p>"{testimony.content}"<strong> - {testimony.author}</strong></p>
               </List.Item>
             )}
           />

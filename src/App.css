@@ -17,3 +17,14 @@
   max-width: var(--width);
   min-height: 15rem;
 }
+
+.details-container{
+  text-align: center;
+}
+.testimonies p{
+  margin: auto 2rem auto 2rem;
+}
+.long-description p{
+  margin: auto 2rem auto 2rem;
+  text-align: left;
+}
