@@ -6,6 +6,7 @@ import './App.css';
 import { Layout, Button } from 'antd';
 import { MenuOutlined, HomeOutlined, DesktopOutlined, CodeOutlined, QuestionOutlined, MailOutlined, UserAddOutlined } from '@ant-design/icons';
 import { Typography, Drawer, Divider } from 'antd';
+const logo = require('./hseapps.png');
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<'clubs' | 'courses' | 'details'>('courses');
@@ -30,10 +31,10 @@ export default function App() {
     <Layout className="App">
 
       <Layout.Content>
-        <div style={{width: '100%', height: "70px", background: "#fefefe", display: 'flex', justifyContent: 'space-between', alignItems: "center", padding: "10px 20px"}}>
-        <div style={{display: 'flex', alignItems: 'center', width: mobile ? "70%": "30%"}}>
-                <img src={"https://org-site.vercel.app/static/media/logo.6c966a37.png"} style={{cursor: 'pointer', height: "40px"}}></img>
-                <Typography.Title level={3} style={{margin: "0px 10px"}}> HSE Computer Science </Typography.Title>
+        <div style={{width: '100%', height: "70px", background: "#fefefe",position:"sticky",top:"0",zIndex:"1", display: 'flex', justifyContent: 'space-between', alignItems: "center", padding: "10px 20px"}}>
+        <div style={{display: 'flex', alignItems: 'center', flexBasis: "50%"}}>
+                <img src={logo} style={{cursor: 'pointer', height: "4em"}}></img>
+                <Typography.Title level={3} style={{margin: "0px 10px"}}> {outerWidth<526 ? "HSE CS":"HSE Computer Science"} </Typography.Title>
             </div>
             <div style={{display: 'flex', justifyContent: "space-around",flexBasis:"50%"}}>
 

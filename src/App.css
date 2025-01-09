@@ -1,12 +1,14 @@
+
+
 .card-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: space-between;
+  --width:27rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, var(--width));
+  justify-content: center;
 }
 
 .card-container .ant-card {
-  width: 27rem;
+  width: var(--width);
   height: 15rem;
 }

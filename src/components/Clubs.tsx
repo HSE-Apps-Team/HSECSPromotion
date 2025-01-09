@@ -5,7 +5,7 @@ import { Card } from 'antd';
 export default function Clubs({ onSelectClub }: { onSelectClub: (id: string) => void }) {
   return (
     <div>
-      <h2>Clubs</h2>
+      <h2 style={{ textAlign: 'center' }}>Clubs</h2>
       <div className="card-container">
         {clubs.map((club) => (
             <Card
