@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Clubs from './components/Clubs';
 import Courses from './components/Courses';
 import Details from './components/Details';
@@ -14,6 +14,16 @@ export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [navV, setNavV] = useState(false);
   const [mobile, setMobile] = useState(window.innerWidth < 768);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   function onSelectClub(id: string) {
     setDetailType('club');
@@ -34,7 +44,7 @@ export default function App() {
         <div style={{width: '100%', height: "70px", background: "#fefefe",position:"sticky",top:"0",zIndex:"1", display: 'flex', justifyContent: 'space-between', alignItems: "center", padding: "10px 20px"}}>
         <div style={{display: 'flex', alignItems: 'center', flexBasis: "50%"}}>
                 <img src={logo} style={{cursor: 'pointer', height: "4em"}}></img>
-                <Typography.Title level={3} style={{margin: "0px 10px"}}> {outerWidth<526 ? "HSE CS":"HSE Computer Science"} </Typography.Title>
+                <Typography.Title level={3} style={{margin: "0px 10px"}}>{screenWidth < 526 ? "HSE CS" : "HSE Computer Science"}</Typography.Title>
             </div>
             <div style={{display: 'flex', justifyContent: "space-around",flexBasis:"50%"}}>
 
