@@ -6,9 +6,11 @@ export default class Club extends Affiliation {
     private mid: number,
     public name: string,
     public description: string,
-    public longDescription?: string,
-    public testimonyArr?: Testimony[]
+    public longDesc?: string,
+    public icon?: string,
+    public testimonyArr?: Testimony[],
+    public images?: string[]
   ) {
-    super("B"+mid, name, description, longDescription, testimonyArr);
+    super("B"+mid, name, description, longDesc, icon, testimonyArr, images);
   }
 }

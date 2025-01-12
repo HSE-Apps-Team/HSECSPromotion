@@ -7,8 +7,10 @@ export default class Course extends Affiliation {
     public name: string,
     public description: string,
     public longDesc?: string,
-    public testimonyArr?: Testimony[]
+    public icon?: string,
+    public testimonyArr?: Testimony[],
+    public images?: string[]
   ) {
-    super("A"+mid, name, description, longDesc, testimonyArr);
+    super("A"+mid, name, description, longDesc, icon, testimonyArr, images);
   }
 }

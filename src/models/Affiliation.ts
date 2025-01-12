@@ -6,7 +6,9 @@ export default abstract class Affiliation {
     public name: string,
     public description: string,
     public longDesc?: string,
-    public testimonyArr?: Testimony[] 
+    public icon?: string,
+    public testimonyArr?: Testimony[],
+    public images?: string[]
   ) {}
 
 }

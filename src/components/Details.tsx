@@ -25,7 +25,7 @@ export default function Details({ itemType, itemId, onBack }: DetailsProps) {
     <div className="details-container">
       <Button onClick={onBack}>Back</Button>
       <Typography.Title level={2}>{item.name}</Typography.Title>
-      <Typography.Paragraph>{item.description}</Typography.Paragraph>
+      <Typography.Paragraph className='shortdesc'>{item.description}</Typography.Paragraph>
       
       <div className="long-description">
         <h3>More Information</h3>
