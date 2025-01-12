@@ -12,7 +12,7 @@ export default function Courses({ onSelectCourse }: { onSelectCourse: (id: strin
             key={course.id}
             onClick={() => onSelectCourse(course.id)}
           >
-            <div className='cardLabel'><strong>{course.name}</strong><img src={course.img} alt='' width={"70px"} height={"70px"}/></div><div className='cardDesc'>{course.description}</div>
+            <div className='cardLabel'><strong>{course.name}</strong><img src={course.icon} alt='' width={"70px"} height={"70px"}/></div><div className='cardDesc'>{course.description}</div>
           </Card>
         ))}
       </div>

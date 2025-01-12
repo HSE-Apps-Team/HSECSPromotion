@@ -2,7 +2,7 @@ import React from 'react';
 import { clubs, courses } from '../data/data';
 import Testimony from '../models/Testimony';
 import Affiliation from '../models/Affiliation';
-import { Button, Typography, List } from 'antd';
+import { Button, Typography, List, Image } from 'antd';
 
 interface DetailsProps {
   itemType: 'club' | 'course';
@@ -31,7 +31,18 @@ export default function Details({ itemType, itemId, onBack }: DetailsProps) {
         <h3>More Information</h3>
         <p>{item.longDesc || 'No detailed description available.'}</p>
       </div>
-
+      {item.images ?
+      <div className="images">
+      <Image.PreviewGroup
+    items={item.images}
+  >
+    <Image
+      width={"50%"}
+      src={item.images[0]}
+    />
+  </Image.PreviewGroup>
+      </div>:null
+}
       <div className="testimonies">
         <Typography.Title level={3}>What People Say</Typography.Title>
         {testimonies.length > 0 ? (
