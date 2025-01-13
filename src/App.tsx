@@ -4,7 +4,6 @@ import Courses from './components/Courses';
 import Details from './components/Details';
 import './App.css';
 import { Layout, Button } from 'antd';
-import { MenuOutlined, HomeOutlined, DesktopOutlined, CodeOutlined, QuestionOutlined, MailOutlined, UserAddOutlined } from '@ant-design/icons';
 import { Typography, Drawer, Divider } from 'antd';
 const logo = require('./hseapps.png');
 
@@ -43,7 +42,7 @@ export default function App() {
       <Layout.Content>
         <div style={{width: '100%', height: "70px", background: "#fefefe",position:"sticky",top:"0",zIndex:"1", display: 'flex', justifyContent: 'space-between', alignItems: "center", padding: "10px 20px"}}>
         <div style={{display: 'flex', alignItems: 'center', flexBasis: "50%"}}>
-                <img src={logo} style={{cursor: 'pointer', height: "4em"}}></img>
+                <img onClick={() => setCurrentPage(detailType === 'club' ? 'clubs' : 'courses')} src={logo} style={{cursor: 'pointer', height: "4em"}}></img>
                 <Typography.Title level={3} style={{margin: "0px 10px"}}>{screenWidth < 526 ? "HSE CS" : "HSE Computer Science"}</Typography.Title>
             </div>
             <div style={{display: 'flex', justifyContent: "space-around",flexBasis:"50%"}}>
