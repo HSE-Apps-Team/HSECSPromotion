@@ -22,7 +22,7 @@ for (const course of coursesData) {
   addCourse(course.id, course.title, course.description, course.longDesc, course.icon, course.testimonyArr, course.images);
 }
 for (const club of clubsData) {
-  addClub(club.title, club.description, club.longDesc, club.icon, club.testimonyArr);
+  addClub(club.title, club.description, club.longDesc, club.icon, club.testimonyArr, club.images);
 }
 
 export const testimonies: Testimony[] = [];
