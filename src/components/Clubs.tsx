@@ -1,6 +1,7 @@
 import React from 'react';
 import { clubs } from '../data/data';
 import { Card } from 'antd';
+import Meta from 'antd/es/card/Meta';
 
 export default function Clubs({ onSelectClub }: { onSelectClub: (id: string) => void }) {
   return (
@@ -9,11 +10,12 @@ export default function Clubs({ onSelectClub }: { onSelectClub: (id: string) => 
       <div className="card-container">
         {clubs.map((club) => (
             <Card
-              key={club.id}
-              onClick={() => onSelectClub(club.id)}
-            >
-              <div className='cardLabel'><strong>{club.name}</strong><img src={club.icon} alt='' width={"70px"} height={"70px"}/></div><div className='cardDesc'>{club.description}</div>
-            </Card>
+            key={club.id}
+            onClick={() => onSelectClub(club.id)}
+            cover={<img src={club.icon} alt=''/>}
+          >
+            <Meta title={club.name} description={club.description} />
+          </Card>
           ))}
         </div>
       </div>

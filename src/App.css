@@ -10,7 +10,7 @@
 }
 @media (max-width: 27rem) {
   .card-container {
-    --width: unset;
+    --width: 100%;
   }
 }
 
@@ -23,7 +23,7 @@
   text-align: center;
 }
 .testimonies p{
-  margin: auto 2rem auto 2rem;
+  margin: auto 2rem 1rem 2rem;
 }
 .long-description p{
   text-align: left;
@@ -49,6 +49,29 @@
 .cardLabel img{
   border-radius: 15px;
 }
+.images img{
+  object-fit: cover;
+  border-radius: 15px;
+}
+.meat{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.testimonies{
+  width: 40%;
+}
 .images{
-  margin: 3rem;
+  width: 60%;
+}
+@media (max-width: 800px) {
+  .meat{
+    flex-direction: column;
+  }
+  .testimonies{
+    width: 100%;
+  }
+  .images{
+    width: 100%;
+  }
 }

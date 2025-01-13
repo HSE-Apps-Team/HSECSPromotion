@@ -1,6 +1,7 @@
 import React from 'react';
 import { courses } from '../data/data';
 import { Card } from 'antd';
+import Meta from 'antd/es/card/Meta';
 
 export default function Courses({ onSelectCourse }: { onSelectCourse: (id: string) => void }) {
   return (
@@ -11,8 +12,9 @@ export default function Courses({ onSelectCourse }: { onSelectCourse: (id: strin
           <Card
             key={course.id}
             onClick={() => onSelectCourse(course.id)}
+            cover={<img src={course.icon} alt=''/>}
           >
-            <div className='cardLabel'><strong>{course.name}</strong><img src={course.icon} alt='' width={"70px"} height={"70px"}/></div><div className='cardDesc'>{course.description}</div>
+            <Meta title={course.name} description={course.description} />
           </Card>
         ))}
       </div>
