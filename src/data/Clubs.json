@@ -3,14 +3,21 @@
     "description": "A service organization to promote Computer Science",
     "longDesc": "CSHS encourages students’ enthusiasm for computer science, honors academic excellence, and promotes service.",
     "img": "https://storage.googleapis.com/hse-key/cshs-logo-crest.png",
-    "testimonyArr":[]
+    "testimonyArr":[{
+        "name": "Anonymous",
+        "testimony": "CSHS is an amazing way to serve the community, build a college application, and make a difference while doing what you enjoy. It's fun to go to elementaries and teach kids about computer science"
+    }]
 },
 {
     "title": "HSE Apps",
     "description": "Learn to program apps, no experience needed",
     "longDesc": "Club mentors will lead groups to program apps over the semester. The club will also host their own \"hackathon\" where members will get a programming challenge and build a solution within a short time frame.",
     "img": "https://storage.googleapis.com/hse-key/HseApps%20Logo%20Redesign.png",
-    "testimonyArr":[]
+    "testimonyArr":[{
+        "name": "Anonymous",
+        "testimony": "HSE Apps is a fun way to socialize with fellow nerds... It's great to learn about programming"
+    }
+    ]
 },
 {
     "title": "Girls Who Code",

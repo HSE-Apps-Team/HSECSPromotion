@@ -29,7 +29,10 @@
     "description": "A year-long course emphasizing Object Oriented Programming techniques using Java.",
     "longDesc": "Computer Science is the development of computer programs to solve problems. This year-long course will emphasize Object Oriented Programming techniques. Topics include variables, algorithms, decision statements, loops, strings, arrays, ArrayLists, methods, inheritance, recursion, searching, and sorting. Students will prepare to take the College Board AP Computer Science A Exam in May. Requirement – Algebra II AND Website and Database Development, or permission of instructor; Recommendation – A \"B\" average in Algebra II and Website and Database Development. Counts as third Science credit.",
     "icon":"",
-    "testimonyArr":[]
+    "testimonyArr":[{
+      "name": "Anonymous",
+      "testimony": "AP CSA is a great class to learn the basics and fundamentals of text coding. It has allowed me to branch off in what ever path of Computer Science I choose"
+  }]
   },
   {
     "id": 7183,
@@ -61,7 +64,10 @@
     "description": "Advanced course focusing on application development through the software development lifecycle.",
     "longDesc": "Introduces students to concepts and practices of different programming languages for application development. Students will learn the software development lifecycle including investigating requirements, feasibility, building, testing, deploying, and supporting the application. Concepts will be applied through creating hands‐on applications for one or more platforms using current development environments and tools. Students will practice skills such as team building, work ethic, communication, documentation, and adaptability. Pre‐requisite: AP Computer Science A (Java) OR Software Development. Counts as a third Science credit.",
     "icon":"",
-    "testimonyArr":[]
+    "testimonyArr":[{
+      "name": "Anonymous",
+      "testimony": "Software Development Capstone is a different way of learning. Working with classmates, building projects from the ground, and building real-world development skills while in school."
+  }]
   },
   {
     "id": 7180,
