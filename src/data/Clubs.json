@@ -6,7 +6,15 @@
     "testimonyArr":[{
         "author": "Anonymous",
         "content": "CSHS is an amazing way to serve the community, build a college application, and make a difference while doing what you enjoy. It's fun to go to elementaries and teach kids about computer science"
-    }]
+    }],
+    "projects":[
+        {
+            "title":"HSE Computer Science Promotion",
+            "images":["hsepromo1.png"],
+            "description":"Website to promote Computer Science courses and clubs at HSE",
+            "link":"https://cs.hseapps.org/"
+        }
+    ]
 },
 {
     "title": "HSE Apps",
@@ -18,7 +26,27 @@
         "content": "HSE Apps is a fun way to socialize with fellow nerds... It's great to learn about programming"
     }
     ],
-    "images":["/hseapp2.jpg","/hseapp3.jpg","/hseapp4.jpg","/hseapp5.PNG","/hseapp6.PNG"]
+    "images":["/hseapp2.jpg","/hseapp3.jpg","/hseapp4.jpg","/hseapp5.PNG","/hseapp6.PNG"],
+    "projects":[
+      {
+        "title":"HSE Schedule",
+        "images":["hsesched1.png","hsesched2.png"],
+        "description":"",
+        "link":"https://hseschedule.app/"
+      },
+      {
+        "title":"HSE Courses",
+        "images":["hsecourses1.png"],
+        "description":"",
+        "link":"https://hsecourses.app/"
+      },
+      {
+        "title":"HSE Clubs",
+        "images":["hseclubs1.png","hseclubs2.png"],
+        "description":"",
+        "link":"https://hseclubs.com/"
+      }
+    ]
 },
 {
     "title": "Girls Who Code",

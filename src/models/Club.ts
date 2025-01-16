@@ -1,5 +1,6 @@
 import Affiliation from './Affiliation';
 import Testimony from './Testimony';
+import Project from './Project';
 
 export default class Club extends Affiliation {
   constructor(
@@ -9,8 +10,9 @@ export default class Club extends Affiliation {
     public longDesc?: string,
     public icon?: string,
     public testimonyArr?: Testimony[],
-    public images?: string[]
+    public images?: string[],
+    public projects?: Project[]
   ) {
-    super("B"+mid, name, description, longDesc, icon, testimonyArr, images);
+    super("B"+mid, name, description, longDesc, icon, testimonyArr, images, projects);
   }
 }

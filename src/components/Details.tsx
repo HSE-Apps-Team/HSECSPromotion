@@ -3,6 +3,7 @@ import { clubs, courses } from '../data/data';
 import Testimony from '../models/Testimony';
 import Affiliation from '../models/Affiliation';
 import { Button, Typography, List, Image, Carousel, Card } from 'antd';
+import Project from '../models/Project';
 
 interface DetailsProps {
   itemType: 'club' | 'course';
@@ -40,7 +41,7 @@ export default function Details({ itemType, itemId, onBack }: DetailsProps) {
           <Image.PreviewGroup
     items={item.images}
   >
-    <Carousel autoplay>
+    <Carousel autoplay adaptiveHeight={true}>
       {item.images.map((image) => (
     <Image
       src={image}
@@ -56,7 +57,7 @@ export default function Details({ itemType, itemId, onBack }: DetailsProps) {
         <Card className='testimony-card'>
         <Typography.Title level={3}>What People Say</Typography.Title>
                   {testimonies.length > 0 ? (
-          <Carousel autoplay>
+          <Carousel className='testbody' autoplay>
             {testimonies.map((testimony) =>
               <div>
                 <p>"{testimony.content}"<strong> - {testimony.author}</strong></p>
@@ -67,8 +68,29 @@ export default function Details({ itemType, itemId, onBack }: DetailsProps) {
           <p>No testimonies yet.</p>
         )}
         </Card>
-
       </div>
+      
+      </div>
+      {item.projects? <Typography.Title level={3}>Student Projects</Typography.Title>:null}
+        <div className="projects">
+        {item.projects && item.projects.length > 0 ?
+      item.projects.map((project) => (
+        <Card
+          cover={
+            <Image.PreviewGroup items={project.images}>
+              <Carousel autoplay>
+              {project.images.map((image) => (
+                <Image key={image} src={image} />
+              ))}
+            </Carousel>
+            </Image.PreviewGroup>
+            
+          }
+        >
+          <Card.Meta title={project.title} description={project.description? project.description:null} />
+          {project.link ? <a href={project.link}>Link</a>:null}
+        </Card>
+      )):null}
       </div>
       
     </div>

@@ -1,4 +1,5 @@
 import Testimony from "./Testimony";
+import Project from "./Project";
 
 export default abstract class Affiliation {
   constructor(
@@ -8,7 +9,8 @@ export default abstract class Affiliation {
     public longDesc?: string,
     public icon?: string,
     public testimonyArr?: Testimony[],
-    public images?: string[]
+    public images?: string[],
+    public projects?: Project[]
   ) {}
 
 }

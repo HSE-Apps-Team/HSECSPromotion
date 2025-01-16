@@ -80,7 +80,12 @@
     "description": "A yearlong course providing an overview of multiple computing topics from programming to data to cybersecurity.",
     "longDesc": "This yearlong course provides an overview of multiple computing topics from programming to data to cybersecurity. This course provides a baseline for all further computer studies from software development to cybersecurity to data science to IT support and networking. Students will use the latest industry tools in computing to better understand how computers and networks work, how to program a computer, and how to solve problems in our information driven society. This course is the first course in the Next Level Programs of Study Pathway in Software Development. This is a dual credit course through Ivy Tech. Students must meet all Ivy Tech prerequisites to qualify for Ivy Tech dual credit. Counts as third Science credit.",
     "icon":"https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?semt=ais_hybrid",
-    "testimonyArr":[]
+    "testimonyArr":[],
+    "projects":[{
+      "title":"Kick Tracker",
+      "images":["/kick-tracker1.png","/kick-tracker2.png"],
+      "link":"https://studio.code.org/projects/applab/rPAusraNOgLqkkl_DKNb9F5kSXr0YpquFgpBz8ND02Y"
+    }]
   },
   {
     "id": 7185,
@@ -88,7 +93,24 @@
     "description": "Provides understanding of essential Web and Database skills using HTML, CSS, JavaScript, Python, and database concepts.",
     "longDesc": "This course will provide students a basic understanding of the essential Web and Database skills and business practices that directly relate to Internet technologies used in Web site and Database design and development. Students will learn to develop Web sites using Hypertext Markup Language (HTML), Cascading Style Sheets (CSS), JavaScript, and Python. Additionally, students will be introduced to the basic concepts of databases including types of databases, general database environments, database design, normalization and development of tables, queries, reports, and applications. Students will be familiarized with the use of ANSI Standard Structured Query Language. Students will be introduced to data concepts such as data warehousing, data mining, and BIG Data. Requirement – Principles of Computing OR AP Computer Science Principles AND Algebra I; Recommendation – \"C\" average in all math courses including Algebra I. This is a dual credit course through Ivy Tech. Students must meet all Ivy Tech prerequisites to qualify for Ivy Tech dual credit. Fulfills Business Graduation requirement for Class of 2026, 2027, and 2028. Counts as third Science credit.",
     "icon":"https://img.freepik.com/free-vector/creative-abstract-quantum-illustration_23-2149236239.jpg?semt=ais_hybrid",
-    "testimonyArr":[]
+    "testimonyArr":[],
+    "projects":[
+      {
+        "title":"SISO",
+        "images":["/sis1.png","/sis2.png"],
+        "link":"https://siso.onrender.com/"
+      },
+      {
+        "title":"Shut the Box",
+        "images":["/stb1.png","/stb2.png","/stb3.png"],
+        "link":"https://karunkat000.github.io/shut-the-box/"
+      },
+      {
+        "title":"Fishel's Frozen Treats",
+        "images":["/fft1.png","/fft2.png"],
+        "link":"https://fishelmicah.github.io/my-restaurant/"
+      }
+  ]
   },
   {
     "id": 7184,
@@ -107,7 +129,15 @@
     "testimonyArr":[{
       "author": "Anonymous",
       "content": "Software Development Capstone is a different way of learning. Working with classmates, building projects from the ground, and building real-world development skills while in school."
-  }]
+      }],
+    "projects":[
+      {
+        "title":"HSE Maps (WIP)",
+        "images":["/hsemaps1.gif"],
+        "description":"A navigation tool for HSE students to find their way around the school",
+        "link":"https://hsemaps.org/"
+      }
+    ]
   },
   {
     "id": 7180,

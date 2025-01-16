@@ -7,6 +7,7 @@
   grid-template-columns: repeat(auto-fill, var(--width));
   justify-content: center;
   text-align: center;
+  margin: 1rem;
 }
 @media (max-width: 27rem) {
   .card-container {
@@ -25,6 +26,7 @@
 .testimonies p{
   margin: auto 2rem 1rem 2rem;
 }
+
 .long-description p{
   text-align: left;
   width: fit-content;
@@ -52,6 +54,7 @@
 .images img{
   object-fit: cover;
   border-radius: 15px;
+  max-height: 50vh;
 }
 .meat{
   display: flex;
@@ -59,12 +62,39 @@
   justify-content: space-between;
 }
 .testimonies{
-  width: 40%;
+  width: 0;
+  flex: 6 4 auto;
+}
+.testimony-card{
+  height: 100%;
 }
 .images{
-  width: 60%;
+  width: 0;
+  flex: 4 6 auto;
 }
-@media (max-width: 800px) {
+.images >*{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects >*{
+  width: 0;
+  flex-basis: 50%;
+  padding: 12px;
+  flex-grow: 2;
+}
+.projects img{
+  object-fit: cover;
+  border-radius: 15px;
+  max-height: 50vh;
+}
+
+@media (max-width: 672px) {
   .meat{
     flex-direction: column;
   }
@@ -73,5 +103,8 @@
   }
   .images{
     width: 100%;
+  }
+  .projects >*{
+    flex-basis: 100%;
   }
 }
