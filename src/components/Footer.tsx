@@ -4,7 +4,8 @@ export default function Footer() {
       <div className="container footer-inner">
         <span>HSE Computer Science · Fishers, Indiana</span>
         <span>
-          Built by students in <a href="https://hseapps.org/">HSE Apps</a>
+          Built by students in{" "}
+          <a href="https://hseapps.org/">Software Development Capstone</a>
         </span>
       </div>
     </footer>
